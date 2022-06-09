@@ -21,6 +21,12 @@ const getDomainFromUrl = (url) => {
  * @param {string or other} compareStr The value to compare to
  * @param {string} searchStr The users search term
  * @returns {boolean} true if a match, otherwise false
+ 
+ * Compares search term to a given data attribute
+ * Ignores case, special characters and order
+ * @param {string or other} compareStr The value to compare to
+ * @param {string} searchStr The users search term
+ * @returns {boolean} true if a match, otherwise false
  */
 const filterHelper = (compareStr, searchStr) => {
   if (!compareStr) return false;
